@@ -117,6 +117,4 @@ config = {
     }
 };
 
-console.log(config.production);
-
 module.exports = config;
