@@ -6,7 +6,7 @@ var express,
     errors;
 
 if (process.env.NODE_ENV === "dockerdev") {
-	process.env.NODE_ENV="development";
+	process.env.NODE_ENV = "development";
 }
 
 // Make sure dependencies are installed and file system permissions are correct.

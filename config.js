@@ -15,13 +15,13 @@ config = {
         mail: {},
         database: {
             client: 'postgres',
-            connection: process.env.DATABASE_URL,
+            connection: process.env.DATABASE_URL || process.env.JOHN_RAKE_DATABASE_URL,
             debug: false
         },
 
         server: {
             host: '0.0.0.0',
-            port: process.env.PORT
+            port: process.env.PORT || 9000
         },
         storage: {
             active: 'ghost-s3',
@@ -116,5 +116,7 @@ config = {
         logging: false
     }
 };
+
+console.log(config.production);
 
 module.exports = config;
