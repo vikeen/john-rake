@@ -1,4 +1,18 @@
 @import "variables";
+@import "mixins";
+
+/*
+    1. Set the HTML font size to 10px to ensure .1 rem unit equals 1px.
+ */
+html {
+  font-size: 10px; /* [1] */
+  height: 100%;
+}
+
+body {
+    @include font-size();
+    height: 100%;
+}
 
 .wrapper {
     max-width: $wrapper-width;
