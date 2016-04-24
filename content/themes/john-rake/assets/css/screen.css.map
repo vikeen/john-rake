@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "screen.css",
+	"sources": [
+		"screen.scss",
+		"_variables.scss"
+	],
+	"mappings": "AAEA,AAAA,QAAQ,CAAC;EACL,SAAS,ECHG,MAAM;EDIlB,MAAM,EAAE,MAAO,GAClB",
+	"names": []
+}

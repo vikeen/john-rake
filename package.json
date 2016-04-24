@@ -78,6 +78,7 @@
     "grunt-contrib-copy": "1.0.0",
     "grunt-contrib-sass": "1.0.0",
     "grunt-contrib-uglify": "1.0.1",
+    "grunt-sass": "1.1.0",
     "jit-grunt": "0.10.0",
     "purecss": "0.6.0",
     "time-grunt": "1.3.0"

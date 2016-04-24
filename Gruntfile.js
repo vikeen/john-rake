@@ -18,6 +18,16 @@ module.exports = function(grunt) {
             }
         }
     },
+    sass: {
+        options: {
+            sourceMap: true
+        },
+        build: {
+            files: {
+                '<%= johnrake.paths.root %>/assets/css/screen.css': '<%= johnrake.paths.root %>/assets/css/screen.scss'
+            }
+        }
+    },
     uglify: {
       build: {
         files: [{
@@ -36,6 +46,6 @@ module.exports = function(grunt) {
 
   // Default task(s).
   grunt.registerTask('default');
-  grunt.registerTask('build', ['copy:build', 'uglify:build']);
+  grunt.registerTask('build', ['copy:build', 'sass:build', 'uglify:build']);
 
 };
