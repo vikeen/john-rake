@@ -11,6 +11,15 @@ module.exports = function(grunt) {
             root: './content/themes/john-rake'
         }
     },
+    watch: {
+      sass: {
+        files: ['<%= johnrake.paths.root %>/assets/**/*.scss'],
+        tasks: ['sass:build'],
+        options: {
+            spawn: false
+        },
+      }
+    },
     copy: {
         build: {
             files: {
@@ -19,9 +28,6 @@ module.exports = function(grunt) {
         }
     },
     sass: {
-        options: {
-            sourceMap: true
-        },
         build: {
             files: {
                 '<%= johnrake.paths.root %>/assets/css/screen.css': '<%= johnrake.paths.root %>/assets/css/screen.scss'
@@ -45,7 +51,7 @@ module.exports = function(grunt) {
   });
 
   // Default task(s).
-  grunt.registerTask('default');
+  grunt.registerTask('default', ['watch']);
   grunt.registerTask('build', ['copy:build', 'sass:build', 'uglify:build']);
 
 };
