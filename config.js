@@ -15,7 +15,7 @@ config = {
         mail: {},
         database: {
             client: 'postgres',
-            connection: process.env.DATABASE_URL || process.env.JOHN_RAKE_DATABASE_URL,
+            connection: process.env.JOHN_RAKE_DATABASE_URL || process.env.DATABASE_URL,
             debug: false
         },
 
