@@ -11,6 +11,13 @@ module.exports = function(grunt) {
             root: './content/themes/john-rake'
         }
     },
+    copy: {
+        build: {
+            files: {
+                    '<%= johnrake.paths.root %>/assets/css/vendor/pure.css': './node_modules/purecss/build/pure.css'
+            }
+        }
+    },
     uglify: {
       build: {
         files: [{
@@ -28,6 +35,7 @@ module.exports = function(grunt) {
   });
 
   // Default task(s).
-  grunt.registerTask('default', ['uglify']);
+  grunt.registerTask('default');
+  grunt.registerTask('build', ['copy:build', 'uglify:build']);
 
 };
