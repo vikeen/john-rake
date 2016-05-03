@@ -1,9 +1,9 @@
-<nav class="pure-menu pure-menu-horizontal">
-    <ul class="pure-menu-list">
+<nav>
+    <ul class="usa-sidenav-list">
         {{#foreach navigation}}
-            <li class="pure-menu-item-{{slug}}{{#if current}} pure-menu-selected{{/if}}" role="presentation">
-                <a href="{{url absolute="true"}}" class="pure-menu-link">{{label}}</a>
-            </li>
+        <li class="{{#if current}}usa-current{{/if}}" role="presentation">
+            <a href="{{url absolute="true"}}">{{label}}</a>
+        </li>
         {{/foreach}}
     </ul>
 </nav>
