@@ -30,7 +30,7 @@ module.exports = function(grunt) {
     sass: {
         build: {
             files: {
-                '<%= johnrake.paths.root %>/assets/css/screen.css': '<%= johnrake.paths.root %>/assets/css/screen.scss'
+                '<%= johnrake.paths.root %>/assets/css/screen.css': '<%= johnrake.paths.root %>/assets/css/screen.scss',
             }
         }
     },
