@@ -8,6 +8,8 @@
 @import "variables";
 @import "mixins";
 
+@import "profile";
+
 
 
 
@@ -34,8 +36,49 @@ body {
     #LAYOUT
 
 \*---------------------------------------------------------------------------*/
+header[role="banner"] {
+    text-align: center;
+    
+    .profile {
+        border-color: $color-gray-light;
+        display: inline-block;
+    }
+    
+    a {
+        display: inline-block;
+    }
+}
 
-.wrapper {
-    max-width: $wrapper-width;
-    margin: 0 auto;
+main,
+aside[role="complementary"] {
+    margin-top: 5rem;
+}
+
+.usa-section {
+  padding-top: 7.2rem;
+  padding-bottom: 7.2rem;
+ }
+
+.usa-section-dark {
+  background-color: $color-gray-dark;
+  color: #ffffff;
+}
+ 
+ .usa-section-dark h2,
+ .usa-section-dark h3,
+ .usa-section-dark .usa-font-lead {
+    color: #ffffff;
+}
+
+
+/*---------------------------------------------------------------------------*\
+    #POST
+
+\*---------------------------------------------------------------------------*/
+.post-title {
+    margin-top: 0;
+}
+
+.post {
+    margin-bottom: 6em;
 }

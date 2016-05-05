@@ -2238,6 +2238,11 @@ fieldset {
     position: absolute;
     top: 0; }
 
+.profile {
+  width: 125px;
+  border-radius: 50%;
+  border: 2px solid #0071bc; }
+
 /*---------------------------------------------------------------------------*    #CORE
 
     1. Set the HTML font size to 10px to ensure .1 rem unit equals 1px. 
@@ -2255,6 +2260,36 @@ body {
 /*---------------------------------------------------------------------------*    #LAYOUT
 
 \*---------------------------------------------------------------------------*/
-.wrapper {
-  max-width: 1200px;
-  margin: 0 auto; }
+header[role="banner"] {
+  text-align: center; }
+  header[role="banner"] .profile {
+    border-color: #aeb0b5;
+    display: inline-block; }
+  header[role="banner"] a {
+    display: inline-block; }
+
+main,
+aside[role="complementary"] {
+  margin-top: 5rem; }
+
+.usa-section {
+  padding-top: 7.2rem;
+  padding-bottom: 7.2rem; }
+
+.usa-section-dark {
+  background-color: #323a45;
+  color: #ffffff; }
+
+.usa-section-dark h2,
+.usa-section-dark h3,
+.usa-section-dark .usa-font-lead {
+  color: #ffffff; }
+
+/*---------------------------------------------------------------------------*    #POST
+
+\*---------------------------------------------------------------------------*/
+.post-title {
+  margin-top: 0; }
+
+.post {
+  margin-bottom: 6em; }

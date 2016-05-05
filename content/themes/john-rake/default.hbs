@@ -17,12 +17,9 @@
     {{ghost_head}}
 </head>
 <body class="{{body_class}}">
-    <header>
-        <h1><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
-        <h2>{{@blog.description}}</h2>
-    </header>
+    {{> header}}
     <div class="usa-grid">
-        <aside class="usa-width-one-fourth">
+        <aside class="usa-width-one-fourth" role="complementary">
             {{navigation}}
         </aside>
         <main id="content" class="content usa-width-three-fourths" role="main">
